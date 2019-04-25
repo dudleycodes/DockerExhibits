@@ -1,3 +1,6 @@
 [submodule "java/04-springApp/springboot-sample-app"]
 	path = java/04-springApp/springboot-sample-app
 	url = git://github.com/spring-guides/gs-spring-boot
+[submodule "golang/04-ginApp/gin-gonic-examples"]
+	path = golang/04-ginApp/gin-gonic-examples
+	url = git://github.com/gin-gonic/examples
