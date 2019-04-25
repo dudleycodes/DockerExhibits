@@ -1,0 +1,15 @@
+### Go ###
+# Binaries for programs, plugins, and tests
+*.dll
+*.dylib
+*.exe
+*.exe~
+*.so
+*.test
+*.out
+/vendor/
+/Godeps/
+
+### Project Specific Compiled Output (Linux/Mac)
+hello*
+!hello*.go
