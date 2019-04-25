@@ -1,0 +1,10 @@
+* text=auto encoding=utf-8 eol=lf
+*.gif binary
+*.ico binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+
+# Java specific
+*.java text diff=java
+*.properties
