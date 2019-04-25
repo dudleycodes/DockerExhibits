@@ -5,11 +5,11 @@ This will build a sample Java application and package it into a Docker image. Th
 ## Build
 
 ```shell
-docker build . -t hello-java:jdk
+docker build . -t java-hello:jdk
 ```
 
 ## RUN
 
 ```shell
-docker run --rm hello-java:jdk
+docker run --rm java-hello:jdk
 ```
