@@ -1,9 +1,11 @@
-#
+# Wordpress Using Docker Manually ("The Hard Way")
+
+This example creates two containers, one for MySql and one for Wordpress, and links them together using a bridge network.
 
 ## Create a Docker Network that Wordpress and MySQL will use
 
 ```shell
-docker network create --attachable wordpress_hardway
+docker network create --attachable --driver=bridge wordpress_hardway
 ```
 
 ## Bring up the Database
