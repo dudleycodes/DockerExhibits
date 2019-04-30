@@ -11,7 +11,7 @@ docker network create --attachable --driver=bridge wordpress_hardway
 ## Bring up the Database
 
 ```shell
-docker run -d --rm --name wordpress_db -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=wordpress --network="wordpress_hardway" mysql:8
+docker run -d --rm --name wordpress_db -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=wordpress --network="wordpress_hardway" mysql:8 --default-authentication-plugin=mysql_native_password
 ```
 
 ## Bring up Wordpress
