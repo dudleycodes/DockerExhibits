@@ -1,0 +1,9 @@
+{
+    "name": "example-node-http",
+    "version": "1.0.0",
+    "description": "Example node.js http app in Docker",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    }
+  }
