@@ -1,6 +1,3 @@
-[submodule "java/04-portMapping/springboot-sample-app"]
-	path = java/04-portMapping/springboot-sample-app
-	url = git://github.com/spring-guides/gs-spring-boot
-[submodule "golang/04-portMapping/gin-gonic-examples"]
-	path = golang/04-portMapping/gin-gonic-examples
+[submodule "examples/golang/04-portMapping/gin-gonic-examples"]
+	path = examples/golang/04-portMapping/gin-gonic-examples
 	url = git://github.com/gin-gonic/examples

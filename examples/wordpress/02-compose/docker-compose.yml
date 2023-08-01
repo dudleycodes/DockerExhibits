@@ -1,0 +1,42 @@
+version: '3.6'
+
+services:
+  wordpress_ex02_db:
+    image: mysql:8
+    command: '--default-authentication-plugin=mysql_native_password'
+    volumes:
+      - wordpress_ex02_db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootPassword
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    networks:
+      - wordpress_ex02
+
+  wordpress_ex02_app:
+    depends_on:
+      - wordpress_ex02_db
+    image: wordpress:latest
+    ports:
+      - "8080:80"
+    restart: on-failure
+    environment:
+      WORDPRESS_DB_HOST: wordpress_ex02_db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    networks:
+      - wordpress_ex02
+
+
+volumes:
+  wordpress_ex02_db_data:
+
+
+networks:
+  default:
+    external: true
+  wordpress_ex02:
+    external: false

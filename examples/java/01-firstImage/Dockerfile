@@ -1,5 +1,5 @@
 # Select the base image
-FROM openjdk:11-jdk
+FROM eclipse-temurin:17-jdk
 
 # Copy in our source file
 COPY Hello.java /src/

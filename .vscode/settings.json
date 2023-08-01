@@ -1,9 +1,19 @@
 {
     "cSpell.words": [
         "cheatsheet",
+        "jdeps",
+        "jlink",
         "untagged",
         "wordpress",
         "wordpressdb",
         "wordpressweb"
-    ]
+    ],
+    "markdownlint.ignore": [
+        "**/LICENSE"
+    ],
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": true,
+        "editor.unicodeHighlight.invisibleCharacters": true,
+        "editor.wordWrap": "on"
+    }
 }
